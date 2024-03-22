@@ -10,7 +10,7 @@ function parseName() {
 	let results = document.getElementById("results");	
 	results.style.display = "block";
 	results.innerHTML = '';
-	for(var i = 0; i < 3; i++) {
+	for(var i = 0; i < 5; i++) {
     let middle = '';
     if(Math.floor(Math.random() * 10) == 0) {
       middle = getRandom(this['First'])+' ';
