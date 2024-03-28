@@ -14,6 +14,7 @@
 function parseName() { 
   //pull checked elements
 	var group = document.getElementById("group").value;
+	console.log('group: ' + group);
 	var output = document.getElementById("output");
 	var results = document.getElementById("results");	      
 	results.style.display = "block";
