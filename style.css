@@ -44,7 +44,7 @@ main {
 .output {
 	display: inline-flex;
 	justify-content: center;
-	width: 350px;
+	width: 500px;
 	background-color: lightgrey;
 	border: 2px solid black;
 	margin-top: 25px;
