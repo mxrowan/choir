@@ -13,9 +13,20 @@
 	<p>Clicking "Generate" will generate a list of 5 names.</p>
 </header>
 
+<section class="row">
+	<div class="column" style="text-align:center">
+		<h3>Naming Convention</h3>
+		<select name="group" id="group">
+			<option value="persei">Persei</option>
+			<option value="veras">Veras</option>
+			<option value="attra">Attra</option>
+		</select> 
+	</div>
+</section>
+
 <section class = "generate">
 	<br><button onclick="parseName()">Generate</button><br>
-	<div class = "output">
+	<div class = "output" id="output">
 		<p id="results" style="display:none">text</p>
 	</div>
 </section>
