@@ -62,6 +62,9 @@ function getName(group) {
 			break;
 		case "veras":let adj = getRandom(this['VerasAdjective']);
 			let noun = getRandom(this['VerasNoun']);
+			while(noun.substr(0,5) == adj.substr(0,5)) {
+				noun = getRandom(this['VerasNoun']);
+			}
 			let port = adj.substring(0,3)+noun.substring(0,3).toLowerCase()+' / '+adj.substring(0,3)+noun.substring(0,2).toLowerCase()+' / '+adj.substring(0,2)+noun.substring(0,2).toLowerCase()+' / '+adj.substring(0,2)+noun.substring(0,3).toLowerCase();
 			name = adj+' '+noun+' (<span style="font-weight:bold">'+port+'</span>)';
 			break;
