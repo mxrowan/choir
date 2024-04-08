@@ -2,20 +2,32 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CORUS Name Generator</title>
+  <title>Choir Campaign Name Generator</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <main>
 <!-- partial:index.partial.html -->
 <header>
-	<h1 style="text-align:center">CORUS Name Generator</h1>
-	<p>Clicking "Generate" will generate a list of 5 names.</p>
+	<h1 style="text-align:center">Choir Campaign Name Generator</h1>
+	<p>Clicking "Generate" will generate a list of 5 names in the selected naming convention.</p>
 </header>
+
+<section class="row">
+	<div class="column" style="text-align:center">
+		<h3>Naming Convention</h3>
+		<select name="group" id="group" size=3>
+			<option style="display:none" value="attra">Attra</option>
+			<option selected value="veras">Veras</option>
+			<option value="persei">Persei</option>
+			<option value="volusanisian">Volusanisian</option>
+		</select> 
+	</div>
+</section>
 
 <section class = "generate">
 	<br><button onclick="parseName()">Generate</button><br>
-	<div class = "output">
+	<div class = "output" id="output">
 		<p id="results" style="display:none">text</p>
 	</div>
 </section>
